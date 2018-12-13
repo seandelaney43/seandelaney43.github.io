@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Contact Us</title>
+		<link rel="stylesheet" type="text/CSS" href="Assets/CSS/rules.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="Assets/Scripts/page.js"></script>
+	</head>
+
+	<body>
+		
+		<header>
+			<div id="headerimg1"></div>
+
+			<aside id="navbar">
+			<ul>
+			<li><a class="active" href="index.html">Home</a></li>
+			<li><a href="clubs.html">Clubs and societies</a></li>
+			<li><a href="history.html">History</a></li>
+			<li><a href="people.html">People of interest</a></li>
+			<li><a href="todo.html">Things to do</a></li>
+			<li><a href="contact.html">Contact us </a></li>
+			</ul>
+			</aside>
+		</header>
+
+		<div id="main">
+			<h1>Contact us</h1>
+
+			<p> Leave your suggestions, comments or queries in the boxes provided below and we will try to get back to you as quick as possible.</p>
+			<form  action="https://formspree.io/14sean2014@gmail.com" method="POST" name="regform" onsubmit="return( validate() );">
+
+				<label>
+					<span>Firstname</span><span class="errormessage" id="firstnameerror"> </span>
+					<input class="generalinput" type="text" name="firstname">
+				</label>
+
+				<label>
+					<span>Surname</span><span class="errormessage" id="surnameerror"> </span>
+					<input class="generalinput" type="text" name="surname">
+				</label>
+
+				<label>
+					<span>E-mail</span>
+					<input type="email" name="email" class="generalinput" required>
+				</label>
+
+				<label>
+					<span>Are you from Gorey?</span>
+					<input id="yesno" type="radio" name="resident" value="yes">Yes</option>
+					<input id="yesno" type="radio" name="resident" value="no">No</option>
+				</label>
+
+				<label>
+					<span>Subject</span>
+					<input type="text" name="subject" class="generalinput">
+				</label>
+
+				<label>
+					<span>Message</span>
+					<textarea name="message" class="generalinput"></textarea>
+				</label>
+
+				<div class="status">
+
+				</div>
+
+				<button type="submit">
+					Send
+				</button>
+
+			</form>
+
+			<div class="contactphoto">
+			<img src="Assets/Images/queries.jpg" alt="Queries image" id="queries">
+			</div>
+
+		</div>
+
+		<footer>
+			Site by Sean Delaney  2018&copy;
+		</footer>
+
+	</body>
+</html>
